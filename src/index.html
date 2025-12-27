@@ -4,12 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Klivio — Formations en ligne</title>
+  <meta name="description" content="Plateforme de formations en ligne — Klivio">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   <link href="../style.css" rel="stylesheet">
 </head>
 <body class="min-h-screen overflow-x-hidden m-0 p-0 font-['Montserrat',system-ui,Arial,sans-serif]">
   
   <header class="bg-[#152237] relative text-white">
-    <div class="w-full h-20 flex  items-center justify-around gap-5 ">
+    <div class="w-full h-20 flex items-center justify-around gap-5 ">
 
       <div>
         <img src="./image/logo.png" alt="Klivio" class="block w-[84px] h-auto">
@@ -17,20 +20,20 @@
 
       <nav class="hidden lg:flex" aria-label="Navigation principale">
         <ul class="flex font-semibold gap-5">
-          <li class="text-white list-none gap-5">Les formations</li>
+          <li class="text-white list-none gap-5 text-[15px] font-medium">Les formations</li>
         </ul>
       </nav>
 
-      <form class="hidden lg:flex items-center bg-transparent rounded-[10px] p-[0.4rem, 0.6rem] border border-white/30" role="search">
-          <input class="bg-transparent rounded-none text-white w-[400px] p-[0.6rem] text-base outline-none placeholder-white" type="search" placeholder="Rechercher" aria-label="Rechercher une formation">
-          <button type="submit" class=" bg-transparent border-none text-white text-[1.1rem] cursor-pointer p-[0.4rem] items-center">
+      <form class="hidden lg:flex items-center bg-transparent rounded-[6px] p-[0.4rem, 0.6rem] border border-[#FFFFFF]" role="search">
+          <input class="bg-transparent text-[#FFFFFF] w-[477px] p-[10px_15px] text-[15px] font-medium rounded-md placeholder-white" type="search" placeholder="Rechercher" aria-label="Rechercher une formation">
+          <button type="submit" class=" bg-transparent border-none text-white text-[1.1rem] cursor-pointer p-[10px] items-center">
             <img src="./image/lopeIcon.svg" alt="Klivio">
           </button>
       </form>
 
       <div class="hidden lg:flex items-center gap-5">
-        <button class="text-black bg-[#FFFFFF] outline-none rounded-lg text-[15px] font-medium border-none cursor-pointer px-[15px] py-[7px]" type="submit">Connexion</button>
-        <button class="text-black bg-gradient-to-r from-[#44DD8A] to-[#15B7E2] rounded-lg outline-none text-[15px] font-medium border-none cursor-pointer px-[15px] py-[7px] " type="submit">Inscription</button>
+        <button class="text-black bg-[#FFFFFF] rounded-md text-[15px] font-medium border-none cursor-pointer px-[15px] py-[7px]" type="submit">Connexion</button>
+        <button class="text-black bg-gradient-to-r from-[#44DD8A] to-[#15B7E2] rounded-md text-[15px] font-medium border-none cursor-pointer px-[15px] py-[7px]" type="submit">Inscription</button>
       </div>
 
       <!-- MENU MOBILE -->
@@ -42,8 +45,8 @@
       </button>
 
       <div id="mobileMenu" class="absolute top-20 right-5 bg-[#152237] p-5 rounded-xl shadow-2xl flex flex-col gap-4 z-[1000] opacity-0 -translate-y-2 pointer-events-none transition duration-300">
-        <button class="text-black bg-[#FFFFFF] rounded-lg text-[15px] font-medium border-none cursor-pointer px-[15px] py-[7px]" type="submit">Connexion</button>
-        <button class="text-black bg-gradient-to-r from-[#44DD8A] to-[#15B7E2] rounded-lg text-[15px] font-medium border-none cursor-pointer px-[15px] py-[7px]" type="submit">Inscription</button>
+        <button class="text-black bg-[#FFFFFF] rounded-md text-[15px] font-medium border-none cursor-pointer px-[15px] py-[7px]" type="submit">Connexion</button>
+        <button class="text-black bg-gradient-to-r from-[#44DD8A] to-[#15B7E2] rounded-md text-[15px] font-medium border-none cursor-pointer px-[15px] py-[7px]" type="submit">Inscription</button>
       </div>
     </div>
   </header>
@@ -64,7 +67,7 @@
     <!-- Les formations populaires -->
   
     <div class="bg-white pb-[60px]">
-      <h2 class="text-4xl font-extrabold p-[50px] max-lg:grid lg:justify-items-center">Les formations populaires</h2>
+      <h2 class="text-4xl font-extrabold p-[50px] max-lg:grid lg:justify-items-center max-sm:text-[30px]">Les formations populaires</h2>
       <div class="grid justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 p-[0px_40px]">
         <div class="bg-transparent h-full max-w-[307px]">
           <div class="relative">
@@ -136,7 +139,7 @@
   <!-- Les formations récentes -->
   
   <div class="bg-[#152237] pb-[60px]">
-    <h2 class="text-4xl font-extrabold p-[50px] max-lg:grid lg:justify-items-center text-[#FFFFFF]">Les formations récentes</h2>
+    <h2 class="text-4xl font-extrabold p-[50px] max-lg:grid lg:justify-items-center text-[#FFFFFF] max-sm:text-[30px]">Les formations récentes</h2>
     <div class="grid justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 p-[0px_40px]">
       <div class="bg-transparent h-full max-w-[307px]">
         <div class="relative">
@@ -308,7 +311,7 @@
   <section class="bg-[#44DD8A] grid grid-cols-2 max-lg:grid-cols-1 items-center gap-12 p-[4rem_5%]">
 
     
-    <h2 class="hidden max-lg:flex text-[30px] justify-center font-black text-[#152237] items-center">
+    <h2 class="hidden max-lg:flex text-[40px] justify-center font-black text-[#152237] items-center max-sm:text-[30px]">
       CRÉEZ VOS FORMATIONS
     </h2>
   
@@ -321,39 +324,39 @@
       >
     </div>
 
-    <ul class="flex flex-col gap-5 items-start max-w-[650px]">
+    <ul class="flex flex-col gap-4 items-start max-w-[650px]">
   
       
       <div class="block max-lg:hidden">
-        <h2 class="text-[40px] font-black text-[#152237] leading-tight">
+        <h2 class="text-[40px] font-black text-[#152237] leading-tight max-sm:text-[30px]">
           CRÉEZ VOS FORMATIONS<br>AVEC KLIVIO
         </h2>
       </div>
   
       <li class="flex gap-4 items-start">
         <img src="./image/monercon.svg" alt="Klivio" class="mt-1">
-        <span class="text-[18px] leading-relaxed text-[#0F1B33]">
+        <span class="text-[24px] font-normal leading-relaxed text-[#0F1B33] max-sm:text-[20px]">
           Commission unique, au pourcentage sur les ventes
         </span>
       </li>
   
       <li class="flex gap-4 items-start">
         <img src="./image/ceourIcon.svg" alt="Klivio" class="mt-1">
-        <span class="text-[18px] leading-relaxed text-[#0F1B33]">
+        <span class="text-[24px] font-normal leading-relaxed text-[#0F1B33] max-sm:text-[20px]">
           Mise en avant sur la plateforme
         </span>
       </li>
   
       <li class="flex gap-4 items-start">
         <img src="./image/stiloeIcon.svg" alt="Klivio" class="mt-1">
-        <span class="text-[18px] leading-relaxed text-[#0F1B33]">
+        <span class="text-[24px] font-normal leading-relaxed text-[#0F1B33] max-sm:text-[20px]">
           Contrôle total sur le cours : contenu, prix
         </span>
       </li>
   
       <li class="flex gap-4 items-start">
         <img src="./image/paramaitreIcon.svg" alt="Klivio" class="mt-1">
-        <span class="text-[18px] leading-relaxed text-[#0F1B33]">
+        <span class="text-[24px] font-normal leading-relaxed text-[#0F1B33] max-sm:text-[20px]">
           Fonctionnalités avancées : espace commentaires, QCM, exercices,
           vidéos, PDF, statistiques, codes promos, facturation…
         </span>
@@ -361,7 +364,7 @@
   
       <li class="flex gap-4 items-start">
         <img src="./image/homeIcon.svg" alt="Klivio" class="mt-1">
-        <span class="text-[18px] leading-relaxed text-[#0F1B33]">
+        <span class="text-[24px] font-normal leading-relaxed text-[#0F1B33] max-sm:text-[20px]">
           Le professeur reste 100% propriétaire de sa formation
         </span>
       </li>
@@ -373,11 +376,11 @@
   
   <section class="grid grid-cols-2 max-lg:grid-cols-1 items-center gap-12 justify-items-center">
     <div class="max-w-[600px] pl-10 max-lg:pl-0 text-left max-lg:text-center">
-      <h2 class="text-[40px] font-black text-[#152237] mb-6 pt-10">
+      <h2 class="text-[40px] font-black text-[#152237] mb-6 pt-10 max-sm:text-[30px]">
         À PROPOS DE KLIVIO
       </h2>
   
-      <p class="text-[18px] leading-[1.7] text-[#333]">
+      <p class="text-[18px] font-normal leading-[1.7] text-[#333]">
         Chez Klivio, nous défendons des valeurs fondamentales qui définissent notre approche éducative. Nous nous engageons à assurer une rémunération équitable pour les créateurs de contenu, reconnaissant la qualité de leur travail.
         <br><br>
         Favorisant l'autonomie d'apprentissage, notre plateforme offre la flexibilité  écessaire pour explorer divers sujets. La transparence est au cœur de notre démarche, garantissant une clarté totale sur les formations que les instructeurs proposent. Ensemble, ces valeurs forment le socle d'une  ducation enrichissante et équitable, guidant notre mission d'offrir des pportunités d'apprentissage de qualité
@@ -394,7 +397,7 @@
   <section class="px-[10%] py-8">
   
     <div class="text-center">
-      <h1 class="text-[30px] font-black">NOUS CONTACTER</h1>
+      <h1 class="text-[40px] font-black max-sm:text-[30px]">NOUS CONTACTER</h1>
   
       <div class="flex justify-center py-10 max-lg:hidden">
         <div class="w-[350px] border-2 border-[#44DD8A]"></div>
@@ -403,19 +406,19 @@
   
     <div class="py-10">
       <form class="flex gap-12 justify-center max-lg:flex-col max-lg:gap-6">
-        <input class="bg-[#152237] text-white w-[600px] max-w-full h-[45px] px-4" placeholder="Nom">
-        <input class="bg-[#152237] text-white w-[600px] max-w-full h-[45px] px-4" placeholder="Email">
+        <input class="bg-[#152237] placeholder-slate-50 text-[15px] font-normal w-[600px] max-w-full h-[45px] px-4" placeholder="Nom">
+        <input class="bg-[#152237] placeholder-slate-50 text-[15px] font-normal w-[600px] max-w-full h-[45px] px-4" placeholder="Email">
       </form>
     </div>
   
     <div class="pb-8">
       <div class="flex justify-center">
-        <textarea class="bg-[#152237] text-white w-[1250px] max-w-full h-[150px] px-4 py-2" placeholder="Votre message"></textarea>
+        <textarea class="bg-[#152237] placeholder-slate-50 text-[15px] font-normal w-[1250px] max-w-full h-[150px] px-4 py-2" placeholder="Votre message"></textarea>
       </div>
     </div>
   
     <div class="flex justify-center">
-      <button class="bg-[#44DD8A] text-[#0F1B33] w-[265px] h-[45px] rounded-md font-medium">
+      <button class="bg-[#44DD8A] text-[#0F1B33] w-[265px] h-[45px] text-[15px] rounded-md font-medium">
         Envoyer
       </button>
     </div>
@@ -462,13 +465,11 @@
           </ul>
   
           <ul class="list-none gap-2 flex flex-col">
-            <li class="font-bold text-[15px] mb-2">Coordonnées</li>
+            <li class="font-bold text-[15px] mb-2 flex max-lg:justify-center">Coordonnées</li>
             <p class="flex gap-[10px] text-sm leading-[1.9] items-start">
               <img src="./image/gpsIcon.svg" alt="Klivio">
-                1 place République,
-                <p class="gap-[10px] text-sm">
+                1 place République,<br>
                   75003 Paris
-                </p>
             </p>
             <p class="flex gap-[10px] text-sm leading-[1.9] items-start">
               <img src="./image/telIcon.svg" alt="Klivio"> 
@@ -482,9 +483,9 @@
         </nav>
   
         <div class="flex flex-col gap-4 max-lg:hidden">
-          <button class="text-black bg-[#FFFFFF] outline-none rounded-lg text-[15px] font-medium border-none cursor-pointer px-[15px] py-[7px]" type="submit">Connexion</button>
-          <button class="text-black bg-gradient-to-r from-[#44DD8A] to-[#15B7E2] rounded-lg outline-none text-[15px] font-medium border-none cursor-pointer px-[15px] py-[7px] " type="submit">Inscription</button>
-         </div>
+          <button class="text-black bg-[#FFFFFF] rounded-md text-[15px] font-medium border-none cursor-pointer px-[15px] py-[7px]" type="submit">Connexion</button>
+          <button class="text-black bg-gradient-to-r from-[#44DD8A] to-[#15B7E2] rounded-md text-[15px] font-medium border-none cursor-pointer px-[15px] py-[7px]" type="submit">Inscription</button>
+        </div>
   
       </div>
   
